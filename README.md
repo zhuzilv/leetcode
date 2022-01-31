@@ -1,4 +1,4 @@
 # leetcode
 
-## ts,java,c++
-## leetcode training
+ ts,java,c++
+ leetcode training
