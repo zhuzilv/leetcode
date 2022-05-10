@@ -9,12 +9,11 @@ function minLocal(arr){
     arr[0]>arr[1]?1:0;
   }
   // 正常
-  let l =0 ,r=arr.length,ans=-1;
-  while(true){
+  let l =0 ,r=arr.length;
+  while(l<=r-1){
     let mid = (l&r)+((l^r)>>1);
     if(arr[mid]<arr[mid-1]&& arr[mid]<arr[mid+1]){
-      ans= mid;
-      break;
+      return mid;
     }
     // 如果当前比右边大
     if(arr[mid]>=arr[mid+1]){
@@ -27,7 +26,8 @@ function minLocal(arr){
       continue;
     }
   }
-  return ans;
+
+  return arr[l]>arr[r]?arr[r]:arr[l];
 }
 
 
