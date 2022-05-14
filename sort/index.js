@@ -71,7 +71,8 @@ function insertSort(array){
 function arrBuild(maxLenth,maxValue){
   let arr =new Array(maxLenth).fill(0);
   for(let i=0;i<arr.length;i++){
-    arr[i] = (Math.random() * maxValue) | 0
+    // 可 正负，可为0
+    arr[i] = ((Math.random() * maxValue + 1) | 0) - ((Math.random() * maxValue + 1) | 0)
   }
   return arr;
 }
