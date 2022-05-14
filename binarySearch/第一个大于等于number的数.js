@@ -1,4 +1,5 @@
 function mostNumber(arr,number){
+  // t为标记位，二分到底
   let [l , r , t] = [ 0 , arr.length , -1];
   while(l<=r){
     let mid = (l&r) +((l^r)>>1);
