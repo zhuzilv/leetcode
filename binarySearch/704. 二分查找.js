@@ -5,7 +5,7 @@
  */
  var search = function(nums, target) {
     let l = 0, r = nums.length - 1;
-    while(l <= r) {
+    while(l < r) {
         const m = (l & r) + ((l ^ r) >> 1);
         if(target === nums[m]) {
             return m;
@@ -15,7 +15,8 @@
             l = m + 1
         }
     }
-    return -1;
+
+    return nums[l]===target?l:-1;
     };
 
-console.log(search([1,2,3,4,5],6))
+console.log(search([1,2,3,4,5],5))
