@@ -54,14 +54,12 @@ const swap = (arr,l,r)=>{
 // console.log(bubbleSort(arr))
 
 // 插入排序
-// 9 5 2 7
-// 2 5 9 7
-// 1 ~ n
-// i ~ 0
+// 1～n  ++
+// i~0 --
 function insertSort(array){
-  for(let i=1;i<array.length;i++){
-    for(let j=i;j>=0 && array[j-1]>array[j];j--){
-        swap(array,j-1,j)
+  for(let i = 1;i<array.length;i++){
+    for(let j = i ;j>0&&array[j]<array[j-1] ;j--){
+        swap(array,j,j-1)
     }
   }
   return array;
@@ -97,8 +95,8 @@ function copy(arr){
 // 大概率比较
 
 function check(){
-  let maxL= 100;
-  let maxValue = 1000;
+  let maxL= 5;
+  let maxValue = 5;
   let times = 10000;
   for(let i = 0 ;i<times ;i++){
     let arr = arrBuild(maxL,maxValue);
@@ -107,6 +105,7 @@ function check(){
     if(!isSorted(sortArr)){
       console.log('error')
       console.log(copyArr)
+      return ;
     }
   }
   console.log('ok')
