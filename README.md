@@ -5,6 +5,7 @@
 # Math.random 随机数题目方法
 # bit operation 位运算
 # queue 队列
+# stack 栈
 # sort 排序
 # Linked list 链表
 # Array 数组类题
