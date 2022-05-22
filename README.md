@@ -1,4 +1,4 @@
-.
+```
 ├── Array
 │   └── 961. 在长度 2N 的数组中找出重复 N 次的元素.js
 ├── Linked list
@@ -10,7 +10,7 @@
 │   ├── 1或0不知概率变固定概率.js
 │   └── README.md
 ├── README.md
-├── binarySearchz
+├── binarySearch
 │   ├── 704. 二分查找.js
 │   ├── README.md
 │   ├── 局部最小值问题.js
@@ -101,4 +101,4 @@
     ├── 232. 用栈实现队列.js
     └── 剑指 Offer 30. 包含min函数的栈.js
 
-16 directories, 85 files
+
