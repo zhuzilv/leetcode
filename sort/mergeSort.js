@@ -1,3 +1,4 @@
+//递归版
 function mergeSort(arr){
   if(arr.length<=1)return arr;
 
@@ -35,3 +36,5 @@ function merge(arr,l,m,r){
 }
 let arr = [ 8,4,6,2]
 console.log(mergeSort(arr));
+
+// 迭代版

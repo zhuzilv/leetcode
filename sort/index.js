@@ -6,6 +6,7 @@ const swap = (arr,l,r)=>{
   arr[l]^=arr[r];
   }
 }
+// 大量浪费比较行为
 // 选择排序
 // 9 5 2 7
 // n+n-1 + ...+ 2+ 1
@@ -56,14 +57,14 @@ const swap = (arr,l,r)=>{
 // 插入排序
 // 1～n  ++
 // i~0 --
-function insertSort(array){
-  for(let i = 1;i<array.length;i++){
-    for(let j = i ;j>0&&array[j]<array[j-1] ;j--){
-        swap(array,j,j-1)
-    }
-  }
-  return array;
-}
+// function insertSort(array){
+//   for(let i = 1;i<array.length;i++){
+//     for(let j = i ;j>0&&array[j]<array[j-1] ;j--){
+//         swap(array,j,j-1)
+//     }
+//   }
+//   return array;
+// }
 // 对数器
 // 自定义长度和随机数
 function arrBuild(maxLenth,maxValue){
