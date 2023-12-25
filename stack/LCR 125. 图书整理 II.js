@@ -1,4 +1,4 @@
-// 队列实现栈
+// 栈实现队列
 // https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/description/
 // 两个栈
 // 向第一个栈推入内容，从第二个栈pop内容，
