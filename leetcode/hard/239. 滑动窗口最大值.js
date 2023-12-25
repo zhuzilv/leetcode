@@ -12,7 +12,7 @@
   //从 -k 到 结尾
   for (let i = 0; i < nums.length; i++) {
     // 此处要有等于，等于数时已经删掉数
-     while(deStack.length&&nums[i]>nums[deStack[deStack.length-1]]){
+     while(deStack.length&&nums[i]>=nums[deStack[deStack.length-1]]){
          deStack.pop();
      }
       deStack.push(i);
